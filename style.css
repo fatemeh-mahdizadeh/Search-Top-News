@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+	list-style: none;
+    font-family: Poppins;
+    font-family: 'Brush Script MT', cursive;
+
+    
+}
+body{
+    background-image: url(./image/bg.png);
+    background-size: 2000px;
+	background-color: #cccccc;
+	background-position: center;
+	
+}
+
+.aa::placeholder {
+    color: black;
+    
+  }

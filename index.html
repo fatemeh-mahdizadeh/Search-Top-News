@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Top News</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <main class="pb-4">
+        <nav class=" h-20">
+            
+            <a class="text-3xl text-white flex content-center pt-5 justify-center" href="">Search Top News by Name or Category or Country</a>
+        </nav> 
+         <form class="border-2 border-white w-10/12 mx-auto mt-16 text-white rounded-2xl">
+                   <div id="search-news" class="flex flex-col w-11/12">
+                       <h1 class="text-center text-2xl py-2 ">Search Top News</h1>
+                       <div class="massage text-lg text-center my-1 flex"></div>
+                       <div class="flex flex-col w-11/12  mx-auto ">
+                            <label for="news-name" class="text-xl mx-1 py-1">Search by Name</label>
+                            <input type="text" id="news-name" class="bg-pink-500  py-1 aa rounded-xl pl-4" placeholder="Search By Name"> 
+                        </div>
+                        
+                         
+                        <div class="flex flex-col w-11/12 mx-auto">
+                            <label for="country" class="text-xl mx-1 py-1">Country</label>
+                            <select class="bg-pink-500 text-black py-1 text-lg rounded-xl pl-4" id="country">
+                                <option value=''>-- select --</option>
+                                <option value="us">United States</option>
+                                <option value="ca">Canada</option>
+                                <option value="gb">United Kingdom</option>
+                                <option value="de">Germany</option>
+                                <option value="br">Brazil</option>
+                                <option value="ar">Argantina</option>
+                                <option value="ru">Russia</option>
+                                <option value="cn">China</option>
+                                <option value="au">Astralia</option>
+                            </select>
+    
+                        </div>
+    
+                        <div class="flex flex-col w-11/12 mx-auto">
+                            <label for="category" class="text-xl mx-1 py-1">Category</label>
+                            <select class="bg-pink-500 text-black py-1 text-lg rounded-xl pl-4" id="category">
+                                <option value=''>-- select --</option>
+                                <option value="business">Business</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="health">Health</option>
+                                <option value="science">Science</option>
+                                <option value="sport">Sport</option>
+                                <option value="technology">Technology</option>
+                            </select>
+                        </div>
+    
+                        <div class=" bg-pink-800 border-pink-700 border-2 mx-auto w-11/12 text-center text-xl my-8 rounded-xl">
+                            <button type="submit" class="w-11/12 py-2 ">Search</button>
+                        </div>
+                       
+                   </div>  
+                   
+               </form>
+
+    </main>
+    <footer>
+        
+        <div id="result" class="grid lg:grid-cols-3 grid-cols-2 w-11/12 mx-auto text-white text-xl"></div>
+        <div class="text-center text-2xl py-2 text-white mt-20">
+            Search News Filter by Name or Category or Country 
+         </div>
+
+    </footer>
+
+       
+          <script src="News.js"></script>
+          <script src="ui.js"></script>
+          <script src="app.js"></script>
+</body>
+</html>
